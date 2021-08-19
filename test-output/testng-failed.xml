@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BROWSER" value="Firefox"/>
+  <test name="Test Firefox(failed)" parallel="tests">
+    <parameter name="BROWSER" value="Firefox"/>
+    <classes>
+      <class name="testNGScripts.CreateOrgTest">
+        <methods>
+          <include name="CreateOrganisation"/>
+          <include name="logoutVtiger"/>
+          <include name="logintoVtiger"/>
+          <include name="closebrowser"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- testNGScripts.CreateOrgTest -->
+      <class name="testNGScripts.TC_21Testng">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="logoutVtiger"/>
+          <include name="logintoVtiger"/>
+          <include name="logintoVtiger"/>
+          <include name="createSalesOrder"/>
+          <include name="closebrowser"/>
+          <include name="launchbrowser"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- testNGScripts.TC_21Testng -->
+    </classes>
+  </test> <!-- Test Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

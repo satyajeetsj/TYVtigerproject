@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="5" name="Suite">
+  <test name="TestRunner-1">
+    <classes>
+      <class name="testNGScripts.TC_21Testng"/>
+    </classes>
+  </test> 
+  <test name="TestRunner-2">
+    <classes>
+      <class name="testNGScripts.CreateOrgTest"/>
+    </classes>
+  </test> 
+  <!-- Test -->
+</suite> <!-- Suite -->

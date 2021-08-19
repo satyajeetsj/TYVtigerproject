@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="87458" started-at="2021-08-19T07:31:23Z" finished-at="2021-08-19T07:32:51Z">
+    <groups>
+    </groups>
+    <test name="Test Firefox" duration-ms="54275" started-at="2021-08-19T07:31:23Z" finished-at="2021-08-19T07:32:18Z">
+      <class name="testNGScripts.CreateOrgTest">
+        <test-method status="SKIP" signature="launchbrowser(java.lang.String)[pri:0, instance:testNGScripts.CreateOrgTest@6500df86]" name="launchbrowser" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="SKIP" signature="logintoVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@6500df86]" name="logintoVtiger" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoVtiger -->
+        <test-method status="SKIP" signature="CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@6500df86]" name="CreateOrganisation" duration-ms="2" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganisation -->
+        <test-method status="SKIP" signature="logoutVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@6500df86]" name="logoutVtiger" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutVtiger -->
+        <test-method status="SKIP" signature="closebrowser()[pri:0, instance:testNGScripts.CreateOrgTest@6500df86]" name="closebrowser" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testNGScripts.CreateOrgTest -->
+      <class name="testNGScripts.TC_21Testng">
+        <test-method status="PASS" signature="launchbrowser(java.lang.String)[pri:0, instance:testNGScripts.TC_21Testng@42dafa95]" name="launchbrowser" is-config="true" duration-ms="38050" started-at="2021-08-19T13:01:23Z" finished-at="2021-08-19T13:02:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:testNGScripts.TC_21Testng@42dafa95]" name="logintoVtiger" is-config="true" duration-ms="7475" started-at="2021-08-19T13:02:02Z" finished-at="2021-08-19T13:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoVtiger -->
+        <test-method status="FAIL" signature="createSalesOrder()[pri:0, instance:testNGScripts.TC_21Testng@42dafa95]" name="createSalesOrder" duration-ms="6454" started-at="2021-08-19T13:02:09Z" finished-at="2021-08-19T13:02:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //select[@name='viewname']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210816143654, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12664, moz:profile: C:\Users\HP USER\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8523e54-4e7d-44b7-8813-44ff0458f46f
+*** Element info: {Using=xpath, value=//select[@name='viewname']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@name='viewname']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210816143654, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12664, moz:profile: C:\Users\HP USER\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8523e54-4e7d-44b7-8813-44ff0458f46f
+*** Element info: {Using=xpath, value=//select[@name='viewname']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+	at com.generic.WebDriver_Utility.select_Dropdwn(WebDriver_Utility.java:42)
+	at testNGScripts.TC_21Testng.createSalesOrder(TC_21Testng.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:402)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSalesOrder -->
+        <test-method status="FAIL" signature="logoutVtiger()[pri:0, instance:testNGScripts.TC_21Testng@42dafa95]" name="logoutVtiger" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:16Z" finished-at="2021-08-19T13:02:16Z">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.generic.WebDriver_Utility.movetoelement(WebDriver_Utility.java:123)
+	at com.ObjectRepo.HomePage.signout(HomePage.java:78)
+	at com.generic.Base_Class.logoutVtiger(Base_Class.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:402)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 33 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/table[1]/tbody/tr/td[3]/table/tbody/tr/td[2]/img
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HP', ip: '192.168.126.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210816143654, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12664, moz:profile: C:\Users\HP USER\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8523e54-4e7d-44b7-8813-44ff0458f46f
+*** Element info: {Using=xpath, value=/html/body/table[1]/tbody/tr/td[3]/table/tbody/tr/td[2]/img}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutVtiger -->
+        <test-method status="SKIP" signature="closebrowser()[pri:0, instance:testNGScripts.TC_21Testng@42dafa95]" name="closebrowser" is-config="true" duration-ms="0" started-at="2021-08-19T13:02:18Z" finished-at="2021-08-19T13:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testNGScripts.TC_21Testng -->
+    </test> <!-- Test Firefox -->
+    <test name="Test Chrome" duration-ms="87458" started-at="2021-08-19T07:31:23Z" finished-at="2021-08-19T07:32:51Z">
+      <class name="testNGScripts.CreateOrgTest">
+        <test-method status="PASS" signature="launchbrowser(java.lang.String)[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="launchbrowser" is-config="true" duration-ms="6180" started-at="2021-08-19T13:02:22Z" finished-at="2021-08-19T13:02:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="logintoVtiger" is-config="true" duration-ms="4652" started-at="2021-08-19T13:02:28Z" finished-at="2021-08-19T13:02:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoVtiger -->
+        <test-method status="PASS" signature="CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="CreateOrganisation" duration-ms="10506" started-at="2021-08-19T13:02:33Z" finished-at="2021-08-19T13:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganisation -->
+        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="logoutVtiger" is-config="true" duration-ms="7324" started-at="2021-08-19T13:02:43Z" finished-at="2021-08-19T13:02:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutVtiger -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="closebrowser" is-config="true" duration-ms="117" started-at="2021-08-19T13:02:51Z" finished-at="2021-08-19T13:02:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testNGScripts.CreateOrgTest -->
+      <class name="testNGScripts.TC_21Testng">
+        <test-method status="PASS" signature="launchbrowser(java.lang.String)[pri:0, instance:testNGScripts.TC_21Testng@42e26948]" name="launchbrowser" is-config="true" duration-ms="7428" started-at="2021-08-19T13:01:23Z" finished-at="2021-08-19T13:01:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:testNGScripts.TC_21Testng@42e26948]" name="logintoVtiger" is-config="true" duration-ms="26927" started-at="2021-08-19T13:01:31Z" finished-at="2021-08-19T13:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoVtiger -->
+        <test-method status="PASS" signature="createSalesOrder()[pri:0, instance:testNGScripts.TC_21Testng@42e26948]" name="createSalesOrder" duration-ms="18616" started-at="2021-08-19T13:01:58Z" finished-at="2021-08-19T13:02:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSalesOrder -->
+        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:testNGScripts.TC_21Testng@42e26948]" name="logoutVtiger" is-config="true" duration-ms="5151" started-at="2021-08-19T13:02:16Z" finished-at="2021-08-19T13:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutVtiger -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:testNGScripts.TC_21Testng@42e26948]" name="closebrowser" is-config="true" duration-ms="516" started-at="2021-08-19T13:02:22Z" finished-at="2021-08-19T13:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testNGScripts.TC_21Testng -->
+    </test> <!-- Test Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
