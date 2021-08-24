@@ -18,10 +18,11 @@ public class Base_Class {
 	public WebDriver driver;
 	PropertyFileUtility p=new PropertyFileUtility();
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(groups={"Smoke test","Regression test"})
-	public void launchbrowser(String BROWSER) throws IOException
+	public void launchbrowser() throws IOException
 	{
+		String BROWSER=System.getProperty("browser");
 		//String Browser=p.readdata("browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
@@ -31,8 +32,9 @@ public class Base_Class {
 		{
 			driver=new FirefoxDriver();
 		}
-
-		driver.get(p.readdata("URL"));
+		String URL=System.getProperty("url");// to give url at run time in maven command line we use this
+		driver.get(URL);//to give url at run time in maven command line we use this
+		//driver.get(p.readdata("URL"));
 
 	}
 
@@ -50,6 +52,7 @@ public class Base_Class {
 	public void logoutVtiger() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
+		Thread.sleep(2000);
 		hp.signout(driver);
 	}
 

@@ -132,7 +132,7 @@ public class WebDriver_Utility {
 	public void rightclick(WebDriver driver, WebElement element)
 	{
 		Actions act=new Actions(driver);
-		act.contextClick().perform();
+		act.contextClick(element).perform();
 	}
 
 	/**
@@ -144,7 +144,7 @@ public class WebDriver_Utility {
 	public void doubleclick(WebDriver driver, WebElement element)
 	{
 		Actions act=new Actions(driver);
-		act.doubleClick().perform();
+		act.doubleClick(element).perform();
 	}
 
 	/**
