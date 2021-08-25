@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import com.ObjectRepo.HomePage;
 import com.ObjectRepo.Loginpage;
 
-public class Base_Class {
+public class Base_Class implements AutoConstants{
 	public WebDriver driver;
 	PropertyFileUtility p=new PropertyFileUtility();
 
@@ -23,7 +23,7 @@ public class Base_Class {
 	{
 		//String BROWSER=System.getProperty("browser");
 		String BROWSER=p.readdata("browser");
-		if(BROWSER.equalsIgnoreCase("chrome"))
+		if(BROWSER.equals("chrome"))
 		{
 			Thread.sleep(2000);
 			driver=new ChromeDriver();
