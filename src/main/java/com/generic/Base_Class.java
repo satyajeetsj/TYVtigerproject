@@ -19,12 +19,13 @@ public class Base_Class {
 
 	//@Parameters("BROWSER")
 	@BeforeClass(groups={"Smoke test","Regression test"})
-	public void launchbrowser() throws IOException
+	public void launchbrowser() throws IOException, InterruptedException
 	{
 		//String BROWSER=System.getProperty("browser");
 		String BROWSER=p.readdata("browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
+			Thread.sleep(2000);
 			driver=new ChromeDriver();
 		}
 		else if (BROWSER.equalsIgnoreCase("firefox"))
