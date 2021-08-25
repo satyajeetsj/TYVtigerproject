@@ -22,8 +22,8 @@ public class Base_Class {
 	@BeforeClass(groups={"Smoke test","Regression test"})
 	public void launchbrowser() throws IOException
 	{
-		String BROWSER=System.getProperty("browser");
-		//String Browser=p.readdata("browser");
+		//String BROWSER=System.getProperty("browser");
+		String BROWSER=p.readdata("browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
@@ -33,8 +33,8 @@ public class Base_Class {
 			driver=new FirefoxDriver();
 		}
 		String URL=System.getProperty("url");// to give url at run time in maven command line we use this
-		driver.get(URL);//to give url at run time in maven command line we use this
-		//driver.get(p.readdata("URL"));
+		//driver.get(URL);//to give url at run time in maven command line we use this
+		driver.get(p.readdata("URL"));
 
 	}
 
