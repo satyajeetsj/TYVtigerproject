@@ -15,7 +15,7 @@ public class PropertyFileUtility {
 	 */
 	public String readdata(String key) throws IOException
 	{
-		FileInputStream fis=new FileInputStream("../VTIGER_prac/commonProp.properties");
+		FileInputStream fis=new FileInputStream(AutoConstants.p);
 		Properties prop=new Properties();
 		prop.load(fis);
 		 String value = prop.getProperty(key);

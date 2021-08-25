@@ -32,7 +32,7 @@ public class Base_Class {
 		{
 			driver=new FirefoxDriver();
 		}
-		String URL=System.getProperty("url");// to give url at run time in maven command line we use this
+		//String URL=System.getProperty("url");// to give url at run time in maven command line we use this
 		//driver.get(URL);//to give url at run time in maven command line we use this
 		driver.get(p.readdata("URL"));
 
