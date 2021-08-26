@@ -18,12 +18,12 @@ public class Base_Class implements AutoConstants{
 	public WebDriver driver;
 	PropertyFileUtility p=new PropertyFileUtility();
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(groups={"Smoke test","Regression test"})
 	public void launchbrowser() throws IOException, InterruptedException
 	{
 		//String BROWSER=System.getProperty("browser");
-		String BROWSER=p.readdata("browser");
+		String BROWSER=p.readdata("BROWSER");
 		if(BROWSER.equals("chrome"))
 		{
 			Thread.sleep(2000);
