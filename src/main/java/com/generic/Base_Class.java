@@ -23,15 +23,15 @@ public class Base_Class implements AutoConstants{
 	{
 		//String BROWSER=System.getProperty("browser");
 		String BROWSER=p.readdata("browser");
-//		if(BROWSER.equalsIgnoreCase("chrome"))
-//		{
-//			Thread.sleep(2000);
-//			driver=new ChromeDriver();
-//		}
-//		else if (BROWSER.equalsIgnoreCase("firefox"))
-//		{
-//			driver=new FirefoxDriver();
-//		}
+		if(BROWSER.equalsIgnoreCase("chrome"))
+		{
+			Thread.sleep(2000);
+			driver=new ChromeDriver();
+		}
+		else if (BROWSER.equalsIgnoreCase("firefox"))
+		{
+			driver=new FirefoxDriver();
+		}
 		//String URL=System.getProperty("url");// to give url at run time in maven command line we use this
 		//driver.get(URL);//to give url at run time in maven command line we use this
 		driver.get(p.readdata("URL"));
