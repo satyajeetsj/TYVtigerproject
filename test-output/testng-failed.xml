@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNGScripts.TC_21Testng">
+      <class name="testNGScripts.CreateOrgTest">
         <methods>
+          <include name="CreateOrganisation"/>
+          <include name="logoutVtiger"/>
           <include name="logintoVtiger"/>
-          <include name="createSalesOrder"/>
+          <include name="closebrowser"/>
           <include name="launchbrowser"/>
         </methods>
-      </class> <!-- testNGScripts.TC_21Testng -->
+      </class> <!-- testNGScripts.CreateOrgTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

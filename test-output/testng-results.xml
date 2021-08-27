@@ -1,32 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33855" started-at="2021-08-23T11:23:51Z" finished-at="2021-08-23T11:24:25Z">
+  <suite name="Default suite" duration-ms="151969" started-at="2021-08-27T06:44:56Z" finished-at="2021-08-27T06:47:28Z">
     <groups>
       <group name="Smoke test">
-        <method signature="CreateOrgTest.CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="CreateOrganisation" class="testNGScripts.CreateOrgTest"/>
+        <method signature="CreateOrgTest.CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="CreateOrganisation" class="testNGScripts.CreateOrgTest"/>
       </group> <!-- Smoke test -->
     </groups>
-    <test name="Default test" duration-ms="33855" started-at="2021-08-23T11:23:51Z" finished-at="2021-08-23T11:24:25Z">
+    <test name="Default test" duration-ms="151969" started-at="2021-08-27T06:44:56Z" finished-at="2021-08-27T06:47:28Z">
       <class name="testNGScripts.CreateOrgTest">
-        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="launchbrowser" is-config="true" duration-ms="9291" started-at="2021-08-23T16:53:51Z" finished-at="2021-08-23T16:54:01Z">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="launchbrowser" is-config="true" duration-ms="64485" started-at="2021-08-27T12:14:56Z" finished-at="2021-08-27T12:16:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="logintoVtiger" is-config="true" duration-ms="5085" started-at="2021-08-23T16:54:01Z" finished-at="2021-08-23T16:54:06Z">
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="logintoVtiger" is-config="true" duration-ms="17826" started-at="2021-08-27T12:16:00Z" finished-at="2021-08-27T12:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoVtiger -->
-        <test-method status="PASS" signature="CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="CreateOrganisation" duration-ms="11338" started-at="2021-08-23T16:54:06Z" finished-at="2021-08-23T16:54:17Z">
+        <test-method status="FAIL" signature="CreateOrganisation()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="CreateOrganisation" duration-ms="53623" started-at="2021-08-27T12:16:18Z" finished-at="2021-08-27T12:17:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at testNGScripts.CreateOrgTest.CreateOrganisation(CreateOrgTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateOrganisation -->
-        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="logoutVtiger" is-config="true" duration-ms="7796" started-at="2021-08-23T16:54:17Z" finished-at="2021-08-23T16:54:25Z">
+        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="logoutVtiger" is-config="true" duration-ms="13452" started-at="2021-08-27T12:17:13Z" finished-at="2021-08-27T12:17:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutVtiger -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:testNGScripts.CreateOrgTest@5622fdf]" name="closebrowser" is-config="true" duration-ms="324" started-at="2021-08-23T16:54:25Z" finished-at="2021-08-23T16:54:25Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:testNGScripts.CreateOrgTest@57baeedf]" name="closebrowser" is-config="true" duration-ms="758" started-at="2021-08-27T12:17:27Z" finished-at="2021-08-27T12:17:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->

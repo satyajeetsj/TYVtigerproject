@@ -47,6 +47,13 @@
 			<artifactId>jaxen</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
@@ -133,7 +140,7 @@
 			</build>
 
 		</profile>
-		
+
 		<profile>
 			<id>smoke_test</id>
 			<build>
@@ -155,7 +162,7 @@
 			</build>
 
 		</profile>
-		
+
 		<profile>
 			<id>regression_test</id>
 			<build>
@@ -177,7 +184,7 @@
 			</build>
 
 		</profile>
-		
+
 	</profiles>
 
 
