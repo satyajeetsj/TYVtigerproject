@@ -1,6 +1,7 @@
 package testNGScripts;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ObjectRepo.CreateOrgPAGE;
@@ -13,7 +14,7 @@ import com.generic.GenerateRandomNum;
 public class CreateOrgTest extends Base_Class
 {
 	
-	@Test(groups="Smoke test")
+	@Test(groups="Smoke test", retryAnalyzer=com.generic.RetryAnalyzer.class)
 	public void CreateOrganisation(){
 	
 		HomePage hp=new HomePage(driver);
@@ -31,7 +32,7 @@ public class CreateOrgTest extends Base_Class
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(random);
 		crp.getSavebutton().click();
 		
-		//Assert.assertEquals(false, true);
+		Assert.assertEquals(false, true);
 		
 
 
