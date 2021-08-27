@@ -34,7 +34,7 @@ public class CreateOrgTest extends Base_Class
 		
 		String actualorgname=driver.findElement(By.xpath("//span[@id='dtlview_Organization Name']")).getText();
 		Assert.assertEquals(actualorgname, random);
-		Assert.assertEquals(false, true);
+		//Assert.assertEquals(false, true);
 		
 
 
