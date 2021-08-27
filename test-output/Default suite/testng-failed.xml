@@ -8,7 +8,6 @@
           <include name="CreateOrganisation"/>
           <include name="logoutVtiger"/>
           <include name="logintoVtiger"/>
-          <include name="closebrowser"/>
           <include name="launchbrowser"/>
         </methods>
       </class> <!-- testNGScripts.CreateOrgTest -->

@@ -32,6 +32,8 @@ public class CreateOrgTest extends Base_Class
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(random);
 		crp.getSavebutton().click();
 		
+		String actualorgname=driver.findElement(By.xpath("//span[@id='dtlview_Organization Name']")).getText();
+		Assert.assertEquals(actualorgname, random);
 		Assert.assertEquals(false, true);
 		
 

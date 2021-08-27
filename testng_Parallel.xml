@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" thread-count="5" name="Suite">
 	<listeners>
-		<listener class-name="com.generic.Listeners.class"></listener>
+		<listener class-name="com.generic.Listeners"></listener>
 	</listeners>
 	<test name="TestRunner-1">
 		<parameter name="BROWSER" value="chrome" />

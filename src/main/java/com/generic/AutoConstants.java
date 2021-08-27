@@ -7,4 +7,5 @@ public interface AutoConstants {
 	String JSONpath="../VTIGER_prac/commonJSON.json";
 	String XMLpath="../VTIGER_prac/commonXML.xml";
 	String Excelpath="../VTIGER_prac/Vtiger_Excel.xlsx";
+	String Extentreportpath="../VTIGER_prac/Extent_Reports/reports";
 }

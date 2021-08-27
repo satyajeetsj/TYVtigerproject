@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BROWSER" value="chrome"/>
+  <listeners>
+    <listener class-name="com.generic.Listeners"/>
+  </listeners>
+  <test name="TestRunner-2(failed)" parallel="tests">
+    <parameter name="BROWSER" value="chrome"/>
     <classes>
       <class name="testNGScripts.CreateOrgTest">
         <methods>
@@ -12,6 +17,14 @@
           <include name="launchbrowser"/>
         </methods>
       </class> <!-- testNGScripts.CreateOrgTest -->
+      <class name="testNGScripts.TC_21Testng">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="logintoVtiger"/>
+          <include name="closebrowser"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- testNGScripts.TC_21Testng -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestRunner-2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
