@@ -82,6 +82,16 @@ public class Java_Utility {
 		String year = arr[5];
 		return year;
 	}
+	
+	public String time()
+	{
+		Date d=new Date();
+		System.out.println(d.toString());
+		String currentdate=d.toString();
+		String[] arr = currentdate.split(" ");
+		String time = arr[3];
+		return time;
+	}
 
 
 }

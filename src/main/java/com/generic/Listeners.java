@@ -19,16 +19,14 @@ public class Listeners implements ITestListener{
 	ExtentReports reports; //Attach the reporter and set system info
 	ExtentTest test; //To create the entries in the class
 
-	public void onFinish(ITestContext arg0) {
-		reports.flush();
-		
-	}
+	
 
 	public void onStart(ITestContext arg0) {
 		
 		Java_Utility jv=new Java_Utility();
 		String date = jv.date();
-		reporter=new ExtentHtmlReporter(AutoConstants.Extentreportpath+date+".html");
+		String time = jv.time();
+		reporter=new ExtentHtmlReporter(AutoConstants.Extentreportpath+date+time+".html");
 		reporter.config().setDocumentTitle("Sdet-19");
 		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setReportName("Smoke");
@@ -41,6 +39,12 @@ public class Listeners implements ITestListener{
 		reports.setSystemInfo("Platform", "Windows");
 		
 	}
+	
+	public void onTestStart(ITestResult result) {
+		test=reports.createTest(result.getMethod().getMethodName());
+		
+	}
+
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
 		// TODO Auto-generated method stub
@@ -67,13 +71,14 @@ public class Listeners implements ITestListener{
 		
 	}
 
-	public void onTestStart(ITestResult result) {
-		test=reports.createTest(result.getMethod().getMethodName());
-		
-	}
-
+	
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, result.getMethod().getMethodName()+"is Passed");
+		
+	}
+	
+	public void onFinish(ITestContext arg0) {
+		reports.flush();
 		
 	}
 	

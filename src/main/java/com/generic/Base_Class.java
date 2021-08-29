@@ -27,7 +27,7 @@ public class Base_Class implements AutoConstants{
 	@BeforeClass(groups={"Smoke test","Regression test"})
 	public void launchbrowser() throws IOException, InterruptedException
 	{
-		//String BROWSER=System.getProperty("browser");
+		//String BROWSER=System.getProperty("browser");+
 		String BROWSER=p.readdata("BROWSER");
 		if(BROWSER.equals("chrome"))
 		{
